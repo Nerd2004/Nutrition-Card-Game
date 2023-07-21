@@ -11,7 +11,7 @@ const Quiz = () => {
     const useremail = person.email;
     console.log({ email: useremail, score: userScore });
     await axios
-      .put("http://localhost:4000/api/update", {
+      .put("https://nutrition-card.onrender.com/api/update", {
         email: useremail,
         score: userScore,
       })

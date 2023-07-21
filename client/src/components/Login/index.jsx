@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:4000/api/auth";
+      const url = "https://nutrition-card.onrender.com/api/auth";
       const { data: res } = await axios.post(url, data);
       // const { user: res } = await axios.post(url, user);
       localStorage.setItem("token", res.data);
