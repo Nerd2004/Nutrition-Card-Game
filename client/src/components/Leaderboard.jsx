@@ -69,7 +69,9 @@ function Leaderboard() {
   const [usersData, setusersData] = useState([]);
   const board = async () => {
     try {
-      const resp = await axios.get("http://localhost:4000/api/rankings");
+      const resp = await axios.get(
+        "https://nutrition-card.onrender.com/api/rankings"
+      );
       console.log(resp.data);
       setusersData(resp.data);
     } catch (error) {
