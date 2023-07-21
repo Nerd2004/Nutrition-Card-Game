@@ -95,7 +95,7 @@ function Leaderboard() {
       <table className={classes.leaderboardTable}>
         <thead>
           <tr className={classes.tableHeader}>
-            <th className={classes.columnHeader}>ID</th>
+            <th className={classes.columnHeader}>Rank</th>
             <th className={classes.columnHeader}>Name</th>
             <th className={classes.columnHeader}>Score</th>
           </tr>
