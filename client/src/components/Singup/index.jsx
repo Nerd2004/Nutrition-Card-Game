@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Button } from "react-bootstrap";
-import { City, Country, State } from "country-state-city";
 import styles from "./styles.module.css";
 import "./1.css";
-import { useRef } from "react";
-import { useEffect } from "react";
 
 const Signup = () => {
-  const [form, setForm] = useState({});
-  const [users, setUsers] = useState([]);
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = ({ currentTarget: input }) => {
     setData({ ...data, [input.name]: input.value });
